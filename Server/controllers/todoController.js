@@ -7,7 +7,7 @@ const createNewTodo = async (req, res) => {
     item: req.body.item,
   });
   await newTodo.save();
-  res.send({ message: "Item Added" });
+  res.send({message: "Item added"});
 };
 
 //GET ALL TODOS
