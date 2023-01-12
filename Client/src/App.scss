@@ -81,3 +81,21 @@ background-color: goldenrod;
   background-color: red;
   color: #fff;
   }
+
+.update-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.update-new-input {
+  width: 80%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+}
+.update-new-btn {
+  background-color: darkorchid;
+  color: #fff;
+  cursor: pointer;
+}
