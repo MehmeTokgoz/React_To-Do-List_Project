@@ -1,0 +1,137 @@
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100vh;
+  height: 100vh;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.App img {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form input[type=text] {
+  padding: 18px;
+  width: 85%;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.form input[type=text]:focus {
+  outline: none;
+}
+
+.form button[type=submit]:focus {
+  outline: none;
+}
+
+.form button[type=submit] {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.todo-listItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.item-content {
+  width: 60%;
+}
+
+.todo-item button:focus {
+  outline: none;
+}
+
+.update-item {
+  background-color: goldenrod;
+}
+
+.delete-item {
+  background-color: red;
+  color: #fff;
+}
+
+.update-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.update-new-input {
+  width: 80%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+}
+
+.update-new-btn {
+  background-color: darkorchid;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100vh;
+  height: 100vh;
+}
+.home-container p {
+  font-size: 18px;
+}
+.home-container button {
+  width: 100vh;
+  margin: 10px auto;
+}
+.home-container .todo-background {
+  display: block;
+  width: 80%;
+  float: left;
+}
+
+.form-text {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}/*# sourceMappingURL=App.css.map */

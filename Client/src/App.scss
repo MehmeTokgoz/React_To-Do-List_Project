@@ -1,15 +1,23 @@
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #fff;
-  width: 500px;
+  width: 100vh;
+  height: 100vh;
   margin: 50px auto;
   padding: 10px;
   border-radius: 8px;
 }
 
-.App h1 {
+.App img {
   text-align: center;
 }
 
@@ -58,12 +66,15 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-};
+}
+
+;
 
 .todo-item button {
   border: none;
   border-radius: 6px;
-  padding: 8px;;
+  padding: 8px;
+  ;
 
 }
 
@@ -74,19 +85,22 @@
 .todo-item button:focus {
   outline: none;
 }
+
 .update-item {
-background-color: goldenrod;
+  background-color: goldenrod;
 }
+
 .delete-item {
   background-color: red;
   color: #fff;
-  }
+}
 
 .update-form {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 .update-new-input {
   width: 80%;
   border-radius: 6px;
@@ -94,8 +108,43 @@ background-color: goldenrod;
   padding: 8px;
   outline: none;
 }
+
 .update-new-btn {
   background-color: darkorchid;
   color: #fff;
   cursor: pointer;
+}
+
+//HOME PAGE STYLES
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100vh;
+  height: 100vh;
+p {
+  font-size: 18px;
+}
+
+  button {
+    width: 100vh;
+    margin: 10px auto;
+  }
+
+  .todo-background {
+    display: block;
+    width: 80%;
+    float: left;
+  }
+
+}
+
+//LOGIN PAGE STYLES
+.form-text {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #6c757d;
 }

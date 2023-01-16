@@ -14,7 +14,7 @@ function LoginController() {
         password: inpassword,
       })
       .then(({ data }) => {
-        console.log(data)
+        console.log(data);
         if (data.token) {
           localStorage.setItem("token", data.token);
           navigate("/todolist");
@@ -43,8 +43,7 @@ function LoginController() {
               }}
             />
             <div id="emailHelp" className="form-text">
-              We'll never share your email with anyone else. You don't have an
-              account ? <a href="signup"> Sign Up </a>
+              We'll never share your email with anyone else.
             </div>
           </div>
           <div className="mb-3">
@@ -59,6 +58,9 @@ function LoginController() {
                 setinpassword(e.target.value);
               }}
             />
+            <p className="form-text">
+              You don't have an account ? <a href="signup"> Sign Up </a>
+            </p>
           </div>
           <button
             type="button"
