@@ -20,7 +20,7 @@ function SignUpController() {
           if(data.message=== "User created and saved") {
             navigate("/login")
           }
-         console.log({data})
+         alert(data.message)
         });
     }
   
@@ -70,7 +70,7 @@ function SignUpController() {
             />
             <div id="emailHelp" className="form-text">
               We'll never share your email with anyone else. You already have an
-              account ? <a href="loginPage.js"> Login </a>
+              account ? <a href="login"> Login </a>
             </div>
           </div>
           <button
