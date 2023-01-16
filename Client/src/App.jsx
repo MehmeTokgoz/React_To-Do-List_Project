@@ -1,6 +1,9 @@
+import "bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.scss";
+import SignUpController from "./components/signupPage";
 
 function App() {
   const [itemText, setItemText] = useState("");
@@ -96,6 +99,18 @@ function App() {
 
   return (
     <div className="App">
+      <div>
+        <Router>
+          <div>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/signup" element={<SignUpController />}></Route>
+              <Route path={"/login"} element={<LoginController />} />
+              <Route path={"/profile"} element = {<Profile/>}/>
+            </Routes>
+          </div>
+        </Router>
+      </div>
       <h1> Todo List </h1>
       <form className="form" onSubmit={(e) => addItem(e)}>
         <input
